@@ -12,7 +12,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    _navigateToLogin();
+   // _navigateToLogin();
   }
 
   _navigateToLogin() async {
@@ -34,20 +34,19 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
+              margin: EdgeInsets.only(bottom: 10.0),
               child: Image.asset(
                 'assets/images/logo.png',
-                height: 150,
-                width: 150,
+                height: 100,
+                width: 100,
               ),
             ),
-            Container(
-              child: Text(
-                'JetLight Studio',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.bold,
-                ),
+            Text(
+              'JetLight Studio',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 24.0,
+                fontWeight: FontWeight.bold,
               ),
             ),
           ],
