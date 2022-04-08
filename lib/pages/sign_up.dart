@@ -90,7 +90,7 @@ class _SignUpState extends State<SignUp> {
                     ),
                   ),
                 ),
-                SizedBox(height: 40.0),
+                SizedBox(height: 30.0),
                 RaisedButton(
                   elevation: 2,
                   padding: EdgeInsets.only(top: 15.0, bottom: 15.0),
@@ -164,15 +164,6 @@ class _SignUpState extends State<SignUp> {
                         ),
                       ),
                     ),
-
-//                    GoogleAuthButton(
-//                      onPressed: () {},
-//                      darkMode: false,
-//                      style: AuthButtonStyle.icon,
-//                      width: 90.0,
-//                      height: 55.0,
-//                      iconSize: 25.0,
-//                    ),
                   ],
                 ),
               ],
