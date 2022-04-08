@@ -32,7 +32,7 @@ class _LoginState extends State<Login> {
                   child: Text(
                     'Login to your Account',
                     style: TextStyle(
-                      color: Colors.black45,
+                      color: Colors.grey,
                       fontSize: 18.0,
                     ),
                   ),
