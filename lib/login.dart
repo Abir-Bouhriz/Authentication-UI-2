@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import './sign_up.dart';
+import 'package:auth_buttons/auth_buttons.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -80,23 +81,27 @@ class _LoginState extends State<Login> {
                   SizedBox(height: 20.0),
                   Container(
                     margin: EdgeInsets.symmetric(horizontal: 22.0, vertical: 20.0),
-                    child: RaisedButton(
-                      padding: EdgeInsets.only(top: 15.0, bottom: 15.0),
-                      textColor: Colors.white,
-                      onPressed: () {
-                        Navigator.of(context).pushReplacement(
-                          MaterialPageRoute(
-                            builder: (context) => SignUp(),
-                          ),
-                        );
-                      },
-                      color: Color(0xFF1E319D),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                      ),
-                      child: Text(
-                        'Sign in',
-                        style: TextStyle(fontSize: 16.0),
+                    child: Material(
+                      elevation: 4,
+                      shadowColor: Colors.grey,
+                      child: RaisedButton(
+                        padding: EdgeInsets.only(top: 15.0, bottom: 15.0),
+                        textColor: Colors.white,
+                        onPressed: () {
+                          Navigator.of(context).pushReplacement(
+                            MaterialPageRoute(
+                              builder: (context) => SignUp(),
+                            ),
+                          );
+                        },
+                        color: Color(0xFF1E319D),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                        child: Text(
+                          'Sign in',
+                          style: TextStyle(fontSize: 16.0),
+                        ),
                       ),
                     ),
                   ),
@@ -115,20 +120,13 @@ class _LoginState extends State<Login> {
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(5.0),
-                        child: RaisedButton.icon(
-                          padding: EdgeInsets.symmetric(vertical: 15.0),
+                        child: GoogleAuthButton(
                           onPressed: () {},
-                          color: Colors.white,
-                          icon: Icon(
-                            FontAwesomeIcons.google,
-                            size: 20.0,
-                          ),
-                          label: Text(
-                            "",
-                          ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
+                          darkMode: false,
+                          style: AuthButtonStyle.icon,
+                          width: 90.0,
+                          height: 55.0,
+                          iconSize: 25.0,
                         ),
                       ),
                       Padding(
@@ -139,8 +137,8 @@ class _LoginState extends State<Login> {
                           color: Colors.white,
                           icon: Icon(
                             FontAwesomeIcons.facebookF,
-                            size: 20.0,
-                            color: Colors.blue,
+                            color: Colors.blueAccent,
+                            size: 25.0,
                           ),
                           label: Text(
                             "",
@@ -158,8 +156,8 @@ class _LoginState extends State<Login> {
                           color: Colors.white,
                           icon: Icon(
                             FontAwesomeIcons.twitter,
-                            size: 20.0,
-                            color: Colors.lightBlueAccent,
+                            color: Colors.lightBlue,
+                            size: 25.0,
                           ),
                           label: Text(
                             "",
@@ -169,6 +167,28 @@ class _LoginState extends State<Login> {
                           ),
                         ),
                       ),
+//                      Padding(
+//                        padding: const EdgeInsets.all(5.0),
+//                        child: FacebookAuthButton(
+//                          onPressed: () {},
+//                          darkMode: false,
+//                          style: AuthButtonStyle.icon,
+//                          width: 90.0,
+//                          height: 55.0,
+//                          iconSize: 25.0,
+//                        ),
+//                      ),
+//                      Padding(
+//                        padding: const EdgeInsets.all(5.0),
+//                        child: TwitterAuthButton(
+//                          onPressed: () {},
+//                          darkMode: false,
+//                          style: AuthButtonStyle.icon,
+//                          width: 90.0,
+//                          height: 55.0,
+//                          iconSize: 25.0,
+//                        ),
+//                      ),
                     ],
                   )
                 ],
