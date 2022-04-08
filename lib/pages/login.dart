@@ -73,7 +73,7 @@ class _LoginState extends State<Login> {
                     ),
                   ),
                 ),
-                SizedBox(height: 40.0),
+                SizedBox(height: 30.0),
                 RaisedButton(
                   elevation: 2,
                   padding: EdgeInsets.only(top: 15.0, bottom: 15.0),
@@ -170,12 +170,21 @@ class _LoginState extends State<Login> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Text(
-                      ' Log in',
-                      style: TextStyle(
-                        color: Colors.blue,
-                        fontSize: 15.0,
-                        fontWeight: FontWeight.bold,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(
+                            builder: (context) => SignUp(),
+                          ),
+                        );
+                      },
+                      child: Text(
+                        ' Log in',
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ],
