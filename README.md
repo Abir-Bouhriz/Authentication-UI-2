@@ -1,16 +1,34 @@
 # Authentication-UI
 
-A new Flutter application.
+![GitHub license](https://img.shields.io/github/license/Mohammed-Benotmane/Tower-Defense-Game.svg)
+![Jetlight studio](https://img.shields.io/badge/Made%20by-Jetlight%20studio-blue.svg?color=082544)
 
-## Getting Started
+## Description:
 
-This project is a starting point for a Flutter application.
+ Login, Sign up and [splash screen](https://pub.dev/packages/splashscreen) designed with flutter.
 
-A few resources to get you started if this is your first Flutter project:
+## ScreenShots:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<img src="assets/screenshots/Screenshot_1.jpg" width="300" /> <img src="assets/screenshots/Screenshot_2.jpg" width="300" /> <img src="assets/screenshots/Screenshot_2.jpg" width="300" />
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Tools & languages:
+
+* Android studio (IDE)
+* Dart (logic)
+* Flutter (Mobile UI developement kit)
+* Paint.net (Image editor)
+
+## Contribution:
+
+Feel free to fork this project and add whatever you like. If you have any suggestions or any comments please feel free to contact me or to open an issue.
+
+## Team:
+
+[Jetlighters](https://github.com/JetLightStudio) having fun.
+
+## Documentation:
+* [Install Flutter](https://docs.flutter.dev/get-started/install)
+* [Flutter documentation](https://docs.flutter.dev/)
+
+For announcements about new releases and breaking changes, follow the [flutter-announce@googlegroups.com](https://groups.google.com/g/flutter-announce) mailing list.
