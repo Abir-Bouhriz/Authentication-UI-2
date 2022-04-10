@@ -13,6 +13,16 @@ class _SignUpState extends State<SignUp> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.white,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Color(0xFF1E319D)),
+          onPressed: () {
+            Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Login()));
+          },
+        ),
+      ),
       body: Center(
         child: SingleChildScrollView(
           child: Padding(
@@ -25,7 +35,7 @@ class _SignUpState extends State<SignUp> {
                   height: 120,
                   width: 120,
                 ),
-                SizedBox(height: 30.0),
+                SizedBox(height: 20.0),
                 Padding(
                   padding: const EdgeInsets.only(left: 10.0),
                   child: Text(
@@ -128,6 +138,7 @@ class _SignUpState extends State<SignUp> {
                     Padding(
                       padding: const EdgeInsets.all(3.0),
                       child: Card(
+                        elevation: 2,
                         child: IconButton(
                           onPressed: (){},
                           padding: EdgeInsets.symmetric(horizontal: 30.0),
@@ -141,6 +152,7 @@ class _SignUpState extends State<SignUp> {
                     Padding(
                       padding: const EdgeInsets.all(3.0),
                       child: Card(
+                        elevation: 2,
                         child: IconButton(
                           onPressed: (){},
                           padding: EdgeInsets.symmetric(horizontal: 30.0),
@@ -154,6 +166,7 @@ class _SignUpState extends State<SignUp> {
                     Padding(
                       padding: const EdgeInsets.all(3.0),
                       child: Card(
+                        elevation: 2,
                         child: IconButton(
                           onPressed: (){},
                           padding: EdgeInsets.symmetric(horizontal: 30.0),

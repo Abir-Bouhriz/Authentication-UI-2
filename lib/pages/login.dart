@@ -111,6 +111,7 @@ class _LoginState extends State<Login> {
                     Padding(
                       padding: const EdgeInsets.all(3.0),
                       child: Card(
+                        elevation: 2,
                         child: IconButton(
                           onPressed: (){},
                           padding: EdgeInsets.symmetric(horizontal: 30.0),
@@ -124,6 +125,7 @@ class _LoginState extends State<Login> {
                     Padding(
                       padding: const EdgeInsets.all(3.0),
                       child: Card(
+                        elevation: 2,
                         child: IconButton(
                           onPressed: (){},
                           padding: EdgeInsets.symmetric(horizontal: 30.0),
@@ -137,6 +139,7 @@ class _LoginState extends State<Login> {
                     Padding(
                       padding: const EdgeInsets.all(3.0),
                       child: Card(
+                        elevation: 2,
                         child: IconButton(
                           onPressed: (){},
                           padding: EdgeInsets.symmetric(horizontal: 30.0),
@@ -179,7 +182,7 @@ class _LoginState extends State<Login> {
                         );
                       },
                       child: Text(
-                        ' Log in',
+                        ' Sign up',
                         style: TextStyle(
                           color: Colors.blue,
                           fontSize: 15.0,
