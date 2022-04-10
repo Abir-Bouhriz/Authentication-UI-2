@@ -9,7 +9,7 @@
 
 ## ScreenShots:
 
-<img src="assets/Screenshot_1.jpg" width="300" /> <img src="assets/Screenshot_2.jpg" width="300" /> 
+<img src="assets/screenshots/Screenshot_1.jpg" width="300" /> <img src="assets/screenshots/Screenshot_2.jpg" width="300" /> <img src="assets/screenshots/Screenshot_2.jpg" width="300" />
 
 
 ## Tools & languages:
